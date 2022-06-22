@@ -252,7 +252,6 @@
     </ion-card-content>
   </ion-card>
 </ion-content>
-
   </ion-page>
 </template>
 
@@ -279,8 +278,10 @@ import {
   IonCol,
   IonRow,
   IonNote,
+  IonInput,
   IonDatetime,
   IonSelectOption,
+  IonToggle,
   format, parseISO, getDate, getMonth, getYear
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
@@ -299,6 +300,7 @@ export default defineComponent({
   IonAccordionGroup,
   IonButton,
   IonCard,
+  IonInput,
   IonCardHeader,
   IonCardTitle,
   IonCardContent,
@@ -311,6 +313,7 @@ export default defineComponent({
   IonNote,
   IonDatetime,
   IonSelectOption,
+  IonToggle
   },
   created() {
     this.date0 = moment().format('DD/MM/YYYY');

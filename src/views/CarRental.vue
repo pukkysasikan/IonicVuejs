@@ -47,7 +47,7 @@
                     <h2>เลือกเพศคนขับ</h2>
                   </ion-card-title>
                 </ion-card-header>
-                <ion-radio-group mode="md" color="tertiary">
+                <ion-radio-group mode="ios" color="tertiary">
                   <ion-row>
                     <ion-col class="ion-no-padding">
                       <ion-item lines="full" color="tertiary">

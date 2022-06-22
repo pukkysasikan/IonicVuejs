@@ -1,52 +1,51 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import HomePage from '../views/HomePage.vue'
-import selectcar from '../views/selectcar.vue'
-import detailcar from '../views/detailcar.vue'
-import cartedit from '../views/cartedit.vue'
-import cartdialog from '../views/cartdialog.vue'
-import cartchackout from '../views/cartchackout.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/dashboard'
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: HomePage
+    path: '/dashboard',
+    name: 'dashboard',
+    component: () => import("@/views/Dashboard.vue")
+  },
+  {
+    path: '/car',
+    name: 'carRental',
+    component: () => import("@/views/CarRental.vue")
   },
   {
     path: '/selectcar',
-    name: 'selectcar',
-    component: selectcar
+    name: 'selectCar',
+    component: () => import("@/views/SelectCar.vue")
   },
   {
     path: '/detailcar',
-    name: 'detailcar',
-    component: detailcar
+    name: 'detailCar',
+    component: () => import("@/views/DetailCar.vue")
   },
   {
     path: '/cartedit',
-    name: 'cartedit',
-    component: cartedit
+    name: 'cartEdit',
+    component: () => import("@/views/CartEdit.vue")
   },
   {
     path: '/cartdialog',
-    name: 'cartdialog',
-    component: cartdialog
+    name: 'cartDialog',
+    component: () => import("@/views/CartDialog.vue")
   },
   {
-    path: '/cartchackout',
-    name: 'cartchackout',
-    component: cartchackout
+    path: '/cartcheckout',
+    name: 'cartCheckOut',
+    component: () => import("@/views/CartCheckOut.vue")
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+  history: createWebHistory("#"),
+  routes,
 })
 
 export default router
