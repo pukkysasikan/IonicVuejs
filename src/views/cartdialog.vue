@@ -23,7 +23,7 @@
                       <div class="content-center">
                         <img
                           class="icon circle transaction-img"
-                          src="assets/imgs/defaultshop.png"
+                         :src="require('../assets/imgs/defaultshop.png')"
                         />
                       </div>
                     </div>
@@ -36,7 +36,7 @@
                     <div class="content-center">
                       <img
                         class="icon circle transaction-img"
-                        src="assets/imgs/defaultshop.png"
+                        :src="require('../assets/imgs/defaultshop.png')"
                       />
                     </div>
                   </ion-col>
@@ -81,7 +81,7 @@
               lines="none"
             >
               <ion-avatar slot="start" class="avatar-m">
-                <img class="non-circle" src="assets/imgs/qrcode.png" />
+                <img class="non-circle" :src="require('../assets/imgs/defaultshop.png')" />
               </ion-avatar>
               <ion-label>
                 <h2><b>รหัสอ้างอิง : A2rd3E</b></h2>
@@ -115,7 +115,7 @@
             color="danger"
             class="ion-no-margin"
             expand="full"
-            routerLink="/home"
+            routerLink="/"
             >กลับไปหน้าหลัก</ion-button
           >
         </ion-card>
@@ -143,11 +143,9 @@ import {
   IonLabel,
   IonCol,
   IonRow,
-  IonNote,
-  format, parseISO, getDate, getMonth, getYear
+  IonNote
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import moment from 'moment';
 export default defineComponent({
   name: 'HomePage',
   components: {

@@ -16,7 +16,7 @@
         <ion-card color="tertiary" class="ion-no-padding border-radius">
           <div class="ion-text-center ion-padding-top">
             <ion-avatar slot="start" class="avatar-l center ion-margin-bottom">
-              <img src="assets/imgs/defaultshop.png" />
+              <img :src="require('../assets/imgs/defaultshop.png')" />
             </ion-avatar>
             <ion-label class="ion-text-center">
               <h2><b>ชื่อร้านค้า</b></h2>
@@ -113,7 +113,7 @@
                     size="auto"
                     class="ion-text-center ion-padding-start"
                   >
-                    <img class="logo-l" src="assets/imgs/defaultshop.png" />
+                    <img class="logo-l" :src="require('../assets/imgs/defaultshop.png')" />
                   </ion-col>
 
                   <ion-col class="ion-padding-start">
@@ -211,7 +211,6 @@ import {
   IonLabel,
   IonCol,
   IonRow,
-  format, parseISO, getDate, getMonth, getYear
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import moment from 'moment';

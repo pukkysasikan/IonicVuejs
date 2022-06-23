@@ -107,7 +107,7 @@
                     <ion-row class="ion-no-padding ion-align-items-left ion-padding-top">
                       <ion-col justify-content-center align-items-left size="auto"
                         class="ion-text-center ion-padding-start">
-                        <img class="logo-l" src="assets/imgs/defaultshop.png" />
+                        <img class="logo-l" :src="require('../assets/imgs/defaultshop.png')" />
                       </ion-col>
 
                       <ion-col class="ion-padding-start">
@@ -177,6 +177,8 @@
                 </ion-item>
                 <ion-item lines="full" color="tertiary">
                   <ion-input placeholder="ชื่อ surname " type="text"></ion-input>
+                </ion-item>
+                <ion-item lines="full" color="tertiary">
                   <ion-input placeholder="นามสกุล lastname " type="text"></ion-input>
                 </ion-item>
                 <ion-item lines="full " color="tertiary ">
@@ -202,12 +204,12 @@
                 <ion-label style="font-size: 15px">
                   ฉันได้อ่านและยอมรับ
                 </ion-label>
-                <ion-chip color="secondary">
+                <ion-chip color="danger">
                   <ion-label color="primary">เงื่อนไขข้อตกลง</ion-label>
                 </ion-chip>
               </ion-item>
               <br>
-              <ion-button color="danger" class="ion-no-margin" expand="full" routerLink="/cartchackout">ดำเนินการต่อ
+              <ion-button color="danger" class="ion-no-margin" expand="full" routerLink="/CartCheckOut">ดำเนินการต่อ
               </ion-button>
             </ion-card>
           </div>
@@ -244,7 +246,6 @@ import {
   IonDatetime,
   IonSelectOption,
   IonToggle,
-  format, parseISO, getDate, getMonth, getYear
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import moment from 'moment';

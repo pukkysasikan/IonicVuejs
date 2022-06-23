@@ -4,12 +4,7 @@ import { RouteRecordRaw } from 'vue-router';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/dashboard'
-  },
-  {
-    path: '/dashboard',
-    name: 'dashboard',
-    component: () => import("@/views/Dashboard.vue")
+    redirect: '/tabs/dashboard'
   },
   {
     path: '/car',
@@ -18,23 +13,23 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/selectcar',
-    name: 'selectCar',
-    component: () => import("@/views/selectCar.vue")
+    name: 'selectcar',
+    component: () => import("@/views/selectcar.vue")
   },
   {
     path: '/detailcar',
-    name: 'detailCar',
-    component: () => import("@/views/detailCar.vue")
+    name: 'detailcar',
+    component: () => import("@/views/detailcar.vue")
   },
   {
     path: '/cartedit',
-    name: 'cartEdit',
-    component: () => import("@/views/cartEdit.vue")
+    name: 'cartedit',
+    component: () => import("@/views/cartedit.vue")
   },
   {
     path: '/cartdialog',
-    name: 'cartDialog',
-    component: () => import("@/views/cartDialog.vue")
+    name: 'cartdialog',
+    component: () => import("@/views/cartdialog.vue")
   },
   {
     path: '/cartcheckout',
@@ -66,6 +61,28 @@ const routes: Array<RouteRecordRaw> = [
     path: '/air-twoway-in',
     name: 'Air-twoway-in',
     component: () => import("@/views/Air-twoway-in.vue")
+  },
+  {
+    path: '/tabs/',
+    component: () => import("@/views/tab.vue"),
+    children: [
+      {
+        path: 'dashboard',
+        component: () => import('@/views/Dashboard.vue')
+      },
+      {
+        path: 'deal',
+        component: () => import('@/views/deal.vue')
+      },
+      {
+        path: 'booking',
+        component: () => import('@/views/booking.vue')
+      },
+      {
+        path: 'account',
+        component: () => import('@/views/Account.vue')
+      }
+    ]
   }
 ]
 

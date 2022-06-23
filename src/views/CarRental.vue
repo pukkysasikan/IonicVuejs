@@ -249,7 +249,6 @@ import {
   IonDatetime,
   IonSegmentButton,
   IonSelectOption,
-  format, parseISO, getDate, getMonth, getYear
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import moment from 'moment';

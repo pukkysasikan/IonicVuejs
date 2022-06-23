@@ -207,7 +207,7 @@
                   </ion-accordion>
                 </ion-accordion-group>
                 <br />
-                <ion-button color="danger" class="ion-no-margin" expand="full" routerLink="/Air-twoway-out">
+                <ion-button color="danger" class="ion-no-margin" expand="full" routerLink="/air-twoway-out">
                   เลือก</ion-button>
               </ion-list>
             </div>
