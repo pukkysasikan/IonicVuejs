@@ -190,7 +190,7 @@ ion-fab {
 }
 
 .transaction .indentation {
-  background-image: url(./views/assets/imgs/indentationbg.png);
+  background-image: url(./assets/imgs/indentationbg.png);
   background-repeat: repeat-x;
   height: 10px;
   margin-top: -1px;

@@ -128,22 +128,22 @@
 
               <!-- วันที่เช่า -->
               <ion-accordion-group color="tertiary" mode="ios">
-                <ion-accordion value="start" color="tertiary">
+                <ion-accordion value="start" style="border-bottom: 1px solid #e0e0e0;" color="tertiary">
                   <ion-item slot="header" color="tertiary">
                     <ion-label style="font-size: 16px">วันที่เช่า</ion-label>
                     <ion-note slot="end">{{ date1 }}</ion-note>
                   </ion-item>
-                  <ion-datetime style="background: white; border-bottom: 1px solid #E9E9E9; border-top: 1px solid #E9E9E9;" id="datetime" slot="content" locale="th-TH" @ionChange="formatDate1($event)"
+                  <ion-datetime style="background: white;" id="datetime" slot="content" locale="th-TH" @ionChange="formatDate1($event)"
                     display-format="YYYY-MM-DD"></ion-datetime>
                 </ion-accordion>
               </ion-accordion-group>
               <ion-accordion-group color="tertiary" mode="ios">
-                <ion-accordion value="start" color="tertiary" toggleIconSlot="start">
+                <ion-accordion value="start" style="border-bottom: 1px solid #e0e0e0;" color="tertiary" toggleIconSlot="start">
                   <ion-item slot="header" color="tertiary">
                     <ion-label style="font-size: 16px">วันที่คืน</ion-label>
                     <ion-note slot="end">{{ date2 }}</ion-note>
                   </ion-item>
-                  <ion-datetime style="background: white; border-bottom: 1px solid #E9E9E9; border-top: 1px solid #E9E9E9;" id="datetime" slot="content" locale="th-TH" @ionChange="formatDate2($event)"
+                  <ion-datetime style="background: white;"  id="datetime" slot="content" locale="th-TH" @ionChange="formatDate2($event)"
                     display-format="YYYY-MM-DD"></ion-datetime>
                 </ion-accordion>
               </ion-accordion-group>

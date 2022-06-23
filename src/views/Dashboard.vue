@@ -23,7 +23,7 @@
             </div>
           </ion-col>
           <ion-col class="mycols1">
-            <div class="myBTNs3" @click="() => cautionAlert('Air Ticket')">
+            <div class="myBTNs3"  @click="() => router.push('/Air-ticket')">
               <ion-icon class="largeIcon" name="airplane" item-start></ion-icon>
               <p class="myHeader">ตั๋วเครื่องบิน</p>
             </div>

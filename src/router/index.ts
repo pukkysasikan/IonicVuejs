@@ -40,6 +40,27 @@ const routes: Array<RouteRecordRaw> = [
     path: '/cartcheckout',
     name: 'cartCheckOut',
     component: () => import("@/views/CartCheckOut.vue")
+  },
+  {
+    path: '/air-ticket',
+    name: 'Air-ticket',
+    component: () => import("@/views/Air-ticket.vue")
+  },
+  
+  {
+    path: '/air-oneway-ticket',
+    name: 'Air-oneway-ticket',
+    component: () => import("@/views/Air-oneway-ticket.vue")
+  },
+  {
+    path: '/air-oneway-payment',
+    name: 'Air-oneway-payment',
+    component: () => import("@/views/Air-oneway-payment.vue")
+  },
+  {
+    path: '/air-twoway-ticket',
+    name: 'Air-twoway-ticket',
+    component: () => import("@/views/Air-twoway-ticket.vue")
   }
 ]
 
