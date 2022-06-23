@@ -5,7 +5,7 @@
                 <ion-buttons slot="start">
                     <ion-back-button text=""></ion-back-button>
                 </ion-buttons>
-                <ion-title>Select Flight (Outbound)</ion-title>
+                <ion-title>Select Flight (Inbound)</ion-title>
             </ion-toolbar>
         </ion-header>
 
@@ -14,7 +14,7 @@
                 <ion-card-content color="tertiary">
                     <div class="ion-no-margin">
                         <ion-card color="tertiary" class="ion-no-padding border-radius">
-                            <ion-row>
+                            <ion-row style="border-bottom: 1px solid #e0e0e0;">
                                 <ion-col>
                                     <ion-select okText="ตกลง" cancelText="ยกเลิก" interface="action-sheet"
                                         placeholder="สายการบิน" mode="ios">

@@ -52,7 +52,7 @@
                                 <ion-label>เลือกรายการ</ion-label>
                             </ion-list-header>
                             <ion-item button class="ion-margin-bottom" color="tertiary" lines="full"
-                                v-for="ticket in tlist" :key="ticket.go" routerLink="/air-oneway-payment">
+                                v-for="ticket in tlist" :key="ticket.go" routerLink="/air-twoway-in">
                                 <ion-avatar slot="start">
                                     <ion-img :src="ticket.img"></ion-img>
                                 </ion-avatar>
@@ -97,7 +97,7 @@ import moment from 'moment';
 import { tickets } from "../mocks/flightTicket"
 import { defineComponent } from 'vue';
 export default defineComponent({
-    name: 'Air-way-ticket',
+    name: 'Air-twoway-ticket',
     components: {
         IonHeader,
         IonContent,

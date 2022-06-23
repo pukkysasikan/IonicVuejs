@@ -136,7 +136,8 @@ export default defineComponent({
         position: "top",
         message: `${text} not available`,
         icon: "alert-circle",
-        duration: 2000,
+        duration: 1000,
+        mode: "ios"
       });
       return toast.present();
     },
@@ -146,6 +147,7 @@ export default defineComponent({
         message: `This app use Vue framework`,
         icon: "information-circle",
         duration: 2000,
+        mode: "ios"
       });
       return toast.present();
     },

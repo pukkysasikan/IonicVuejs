@@ -17,7 +17,7 @@
             background: white;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
-          " @ionChange="segmentChanged($event)">
+          " @ionChange="segmentChanged($event)" v-model="segment">
               <ion-segment-button value="one">
                 <ion-label> เที่ยวเดียว </ion-label>
               </ion-segment-button>
@@ -207,7 +207,7 @@
                   </ion-accordion>
                 </ion-accordion-group>
                 <br />
-                <ion-button color="danger" class="ion-no-margin" expand="full" routerLink="/Air-twoway-ticket">
+                <ion-button color="danger" class="ion-no-margin" expand="full" routerLink="/Air-twoway-out">
                   เลือก</ion-button>
               </ion-list>
             </div>

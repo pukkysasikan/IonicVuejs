@@ -19,22 +19,22 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/selectcar',
     name: 'selectCar',
-    component: () => import("@/views/SelectCar.vue")
+    component: () => import("@/views/selectCar.vue")
   },
   {
     path: '/detailcar',
     name: 'detailCar',
-    component: () => import("@/views/DetailCar.vue")
+    component: () => import("@/views/detailCar.vue")
   },
   {
     path: '/cartedit',
     name: 'cartEdit',
-    component: () => import("@/views/CartEdit.vue")
+    component: () => import("@/views/cartEdit.vue")
   },
   {
     path: '/cartdialog',
     name: 'cartDialog',
-    component: () => import("@/views/CartDialog.vue")
+    component: () => import("@/views/cartDialog.vue")
   },
   {
     path: '/cartcheckout',
@@ -58,9 +58,14 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/Air-oneway-payment.vue")
   },
   {
-    path: '/air-twoway-ticket',
+    path: '/air-twoway-out',
     name: 'Air-twoway-ticket',
-    component: () => import("@/views/Air-twoway-ticket.vue")
+    component: () => import("@/views/Air-twoway-out.vue")
+  },
+  {
+    path: '/air-twoway-in',
+    name: 'Air-twoway-in',
+    component: () => import("@/views/Air-twoway-in.vue")
   }
 ]
 
