@@ -48,13 +48,13 @@
         </ion-row>
         <ion-row class="myrow">
           <ion-col class="mycols">
-            <div class="myBTNs" @click="() => cautionAlert('Tour Package')">
+            <div class="myBTNs" @click="() => router.push('/selecttour')">
               <ion-icon class="largeIcon" name="pricetag" item-start></ion-icon>
               <p class="myHeader">แพคเก็ตทัวร์</p>
             </div>
           </ion-col>
           <ion-col class="mycols1">
-            <div class="myBTNs1" @click="() => cautionAlert('Hotel Booking')">
+            <div class="myBTNs1" @click="() => router.push('/hotelBooking')">
               <ion-icon class="largeIcon" name="business" item-start></ion-icon>
               <p class="myHeader">จองโรงแรม</p>
             </div>
@@ -178,10 +178,6 @@ export default defineComponent({
   margin-bottom: -2rem;
 }
 
-ion-toolbar {
-  box-shadow: 1px 0px 33px 0px rgba(0, 0, 0, 0.59);
-}
-
 .toolbar-background-md {
   border-color: #000 8;
   background: #000 8;
@@ -232,8 +228,8 @@ ion-toolbar {
   color: white;
   margin: 1%;
   border-radius: 6px;
-  box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.20);
+  -webkit-box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.20);
 }
 
 .myBTNs4 {
@@ -241,8 +237,8 @@ ion-toolbar {
   color: white;
   margin: 1%;
   border-radius: 6px;
-  box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.20);
+  -webkit-box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.20);
 }
 
 .largeIcon {
@@ -270,8 +266,8 @@ ion-toolbar {
   left: 35px;
   margin: 2px;
   border-radius: 6px;
-  box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.20);
+  -webkit-box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.20);
 }
 
 .myBTNs3 {
@@ -281,8 +277,8 @@ ion-toolbar {
   left: 35px;
   margin: 2px;
   border-radius: 6px;
-  box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.20);
+  -webkit-box-shadow: 0px 4px 28px 2px rgba(0, 0, 0, 0.20);
 }
 
 .myDiv {

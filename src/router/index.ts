@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from '@ionic/vue-router';
+import { createRouter, createWebHashHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 
 const routes: Array<RouteRecordRaw> = [
@@ -63,6 +63,31 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/Air-twoway-in.vue")
   },
   {
+    path: '/detailtour',
+    name: 'Detailtour',
+    component: () => import("@/views/Detailtour.vue")
+  },
+  {
+    path: '/selecttour',
+    name: 'Selecttour',
+    component: () => import("@/views/Selecttour.vue")
+  },
+  {
+    path: '/hotelbooking',
+    name: 'hotelbooking',
+    component: () => import("@/views/hotelBooking.vue")
+  },
+  {
+    path: '/selecthotel',
+    name: 'Selecthotel',
+    component: () => import("@/views/Selecthotel.vue")
+  },
+  {
+    path: '/selectroom',
+    name: 'Selectroom',
+    component: () => import("@/views/Selectroom.vue")
+  },
+  {
     path: '/tabs/',
     component: () => import("@/views/tab.vue"),
     children: [
@@ -78,6 +103,7 @@ const routes: Array<RouteRecordRaw> = [
         path: 'booking',
         component: () => import('@/views/booking.vue')
       },
+      
       {
         path: 'account',
         component: () => import('@/views/Account.vue')
@@ -87,7 +113,7 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHistory("#"),
+  history: createWebHashHistory(process.env.BASE_URL),
   routes,
 })
 

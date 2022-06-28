@@ -21,7 +21,7 @@
                 <img :src="require('../assets/imgs/defaultshop.png')" />
               </ion-avatar>
               <ion-label color="danger">
-                <h2><b>Your Account</b></h2>
+                <h2><b>My Account</b></h2>
               </ion-label>
               <!-- <ion-button class="no-shadow ion-no-margin" mode="md" color="danger" size="small" shape="round" slot="end">
                 <ion-label class="ion-margin">

@@ -65,9 +65,7 @@ export default defineComponent({
 }
 
 ion-toolbar {
-  box-shadow: 1px 48px 107px -21px rgba(0, 0, 0, 0.56);
-  -webkit-box-shadow: 1px 48px 107px -21px rgba(0, 0, 0, 0.56);
-  -moz-box-shadow: 1px 48px 107px -21px rgba(0, 0, 0, 0.56);
+box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.3);
 }
 
 ion-card {

@@ -199,15 +199,26 @@
                   </ion-accordion>
                 </ion-accordion-group>
               </ion-list>
-              <ion-item lines="full" color="tertiary">
-                <ion-checkbox mode="md" color="primary" slot="start"></ion-checkbox>
-                <ion-label style="font-size: 15px">
-                  ฉันได้อ่านและยอมรับ
-                </ion-label>
-                <ion-chip color="danger">
-                  <ion-label color="primary">เงื่อนไขข้อตกลง</ion-label>
-                </ion-chip>
-              </ion-item>
+
+              <ion-row>
+                <ion-col class="ion-no-padding ion-no-margin" size="7">
+                  <ion-item lines="full" color="tertiary">
+                    <ion-checkbox mode="md" color="primary" slot="start"></ion-checkbox>
+                    <ion-label style="font-size: 15px">
+                      ฉันได้อ่านและยอมรับ
+                    </ion-label>
+                  </ion-item>
+                </ion-col>
+
+                <ion-col class="ion-no-padding ion-no-margin" size="5">
+                  <ion-item lines="full" color="tertiary" class="ion-no-padding ion-no-margin">
+                    <ion-chip color="danger" slot="end">
+                      <ion-label color="primary" @click="showData()">เงื่อนไขข้อตกลง</ion-label>
+                    </ion-chip>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+
               <br>
               <ion-button color="danger" class="ion-no-margin" expand="full" routerLink="/CartCheckOut">ดำเนินการต่อ
               </ion-button>
@@ -215,6 +226,31 @@
           </div>
         </ion-card-content>
       </ion-card>
+
+      <ion-modal :is-open="modelHandle" mode="ios" ref="modal" trigger="open-modal"
+        :presenting-element="$parent.$refs.ionRouterOutlet">
+        <ion-header>
+          <ion-toolbar style="box-shadow: none;">
+            <ion-title>เงื่อนไขข้อตกลง</ion-title>
+            <ion-buttons slot="end">
+              <ion-button @click="hideData()">ปิด</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding" style="text-align: center;">
+          <div style="width: 100%; margin-bottom: 1rem; margin-top: 1rem;">
+          <img
+            :src="require('../assets/imgs/app-development.png')"
+            style="height:100px; border-radius: 50%;" />
+          </div>
+          <ion-note>
+            ข้อมูลที่คุณกรอกนี้จะถูกใช้เพียงเพื่อยืนยันตัวตนและถูกส่งให้กับบริษัทที่เกียวข้อง
+            ซึ่งจะถูกเก็บเป็นความลับ<br />
+            (The information you provide about the details is solely to verify your identity and refer to the relevant
+            companies.)
+          </ion-note>
+        </ion-content>
+      </ion-modal>
     </ion-content>
   </ion-page>
 </template>
@@ -246,6 +282,7 @@ import {
   IonDatetime,
   IonSelectOption,
   IonToggle,
+  IonModal,
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import moment from 'moment';
@@ -276,7 +313,8 @@ export default defineComponent({
     IonNote,
     IonDatetime,
     IonSelectOption,
-    IonToggle
+    IonToggle,
+    IonModal,
   },
   created() {
     this.date0 = moment().format('DD/MM/YYYY');
@@ -286,6 +324,7 @@ export default defineComponent({
       driver: 'no',
       nowDate: new Date(),
       date0: "",
+      modelHandle: false,
     }
   },
   methods: {
@@ -295,7 +334,12 @@ export default defineComponent({
     formatDate0(event) {
       this.date0 = moment(event.target.value).format("DD/MM/YYYY");
     },
-
+    showData() {
+      this.modelHandle = true;
+    },
+    hideData() {
+      this.modelHandle = false;
+    },
   }
 });
 </script>

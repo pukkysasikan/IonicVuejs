@@ -7,7 +7,7 @@
           <ion-icon icon="home" />
           <ion-label>Home</ion-label>
         </ion-tab-button>
-          
+
         <ion-tab-button tab="tab2" href="/tabs/deal">
           <ion-icon icon="pricetag" />
           <ion-label>Promotion</ion-label>
@@ -17,7 +17,7 @@
           <ion-icon icon="book" />
           <ion-label>My Booking</ion-label>
         </ion-tab-button>
-        
+
         <ion-tab-button tab="tab4" href="/tabs/account">
           <ion-icon icon="person" />
           <ion-label>My Account</ion-label>
@@ -37,10 +37,18 @@ export default defineComponent({
   components: { IonLabel, IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage, IonRouterOutlet },
   setup() {
     return {
-      ellipse, 
-      square, 
+      ellipse,
+      square,
       triangle,
     }
   }
 });
 </script>
+
+<style>
+ion-tab-bar {
+  border: none;
+  padding-top: 5px;
+  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+</style>
