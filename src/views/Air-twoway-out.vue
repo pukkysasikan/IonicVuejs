@@ -91,7 +91,12 @@ import {
     IonSelect,
     IonLabel,
     IonAvatar,
-    IonImg
+    IonImg,
+    IonRow,
+    IonCol,
+    IonSelectOption,
+    IonListHeader,
+    IonText,
 } from '@ionic/vue';
 import moment from 'moment';
 import { tickets } from "../mocks/flightTicket"
@@ -112,7 +117,12 @@ export default defineComponent({
         IonSelect,
         IonLabel,
         IonAvatar,
-        IonImg
+        IonImg,
+        IonRow,
+        IonCol,
+        IonSelectOption,
+        IonListHeader,
+        IonText,
     },
     data() {
         return {

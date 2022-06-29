@@ -74,7 +74,14 @@ import {
   IonIcon,
   IonCol,
   IonGrid,
-  IonRow
+  IonRow,
+  IonSearchbar,
+  IonCardContent,
+  IonText,
+  IonList,
+  IonButton,
+  IonLabel,
+  IonImg
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { useRouter } from "vue-router";
@@ -94,7 +101,14 @@ export default defineComponent({
     IonIcon,
     IonCol,
     IonGrid,
-    IonRow
+    IonRow,
+    IonSearchbar,
+    IonCardContent,
+    IonText,
+    IonList,
+    IonButton,
+    IonLabel,
+    IonImg
   },
   setup() {
     const router = useRouter();

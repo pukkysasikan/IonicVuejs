@@ -8,7 +8,6 @@
               <ion-icon name="notifications"></ion-icon>
             </ion-fab-button>
             <ion-popover trigger="alignment-button" :dismissOnSelect="true">
-              <ng-template>
                 <ion-content>
                   <ion-list>
                     <ion-item lines="full" :button="true" :detail="true" id="nested-trigger">
@@ -23,7 +22,6 @@
                     </ion-popover>
                   </ion-list>
                 </ion-content>
-              </ng-template>
             </ion-popover>
           </ion-fab>
         </ion-title>
@@ -98,6 +96,14 @@ import {
   IonCardHeader,
   IonIcon,
   toastController,
+  IonFabButton,
+  IonPopover,
+  IonTitle,
+  IonFab,
+  IonList,
+  IonItem,
+  IonLabel,
+  IonCol
 } from "@ionic/vue";
 import { defineComponent } from "vue";
 import { useRouter } from "vue-router";
@@ -106,6 +112,7 @@ import { Deal } from "../mocks/promotionDeal";
 export default defineComponent({
   name: "dashBoard",
   components: {
+    IonFabButton,
     IonPage,
     IonHeader,
     IonContent,
@@ -119,6 +126,13 @@ export default defineComponent({
     IonCardContent,
     IonCardSubtitle,
     IonIcon,
+    IonPopover,
+    IonTitle,
+    IonFab,
+    IonList,
+    IonItem,
+    IonLabel,
+    IonCol
   },
   data() {
     return {

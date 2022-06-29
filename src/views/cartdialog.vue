@@ -3,7 +3,7 @@
     <ion-header mode="ios">
   <ion-toolbar color="danger">
     <ion-buttons slot="start">
-      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+      <ion-back-button text=""></ion-back-button>
     </ion-buttons>
     <ion-title>Payment Success</ion-title>
   </ion-toolbar>
@@ -143,7 +143,11 @@ import {
   IonLabel,
   IonCol,
   IonRow,
-  IonNote
+  IonNote,
+  IonGrid,
+  IonIcon,
+  IonAvatar,
+  IonText
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 export default defineComponent({
@@ -164,6 +168,10 @@ export default defineComponent({
   IonCol,
   IonRow,
   IonNote,
+  IonGrid,
+  IonIcon,
+  IonAvatar,
+  IonText
   },
 });
 </script>

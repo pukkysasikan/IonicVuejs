@@ -122,7 +122,14 @@ import {
   IonItem,
   IonLabel,
   IonAvatar,
-  IonImg
+  IonImg,
+  IonList,
+  IonGrid,
+  IonRow,
+  IonCol,
+  IonText,
+  IonButton,
+  IonIcon,
 } from '@ionic/vue';
 import moment from 'moment';
 import { defineComponent } from 'vue';
@@ -141,7 +148,14 @@ export default defineComponent({
     IonItem,
     IonLabel,
     IonAvatar,
-    IonImg
+    IonImg,
+    IonList,
+    IonGrid,
+    IonRow,
+    IonCol,
+    IonText,
+    IonButton,
+    IonIcon,
   },
 
   data() {

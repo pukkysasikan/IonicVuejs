@@ -14,11 +14,20 @@
         <ion-card>
           <ion-card-content color="tertiary">
             <div class="ion-no-margin">
-              <ion-card color="tertiary" class="ion-no-padding border-radius cardpromo"
-                routerLink="/tabs/car-promotion">
+              <ion-card
+                color="tertiary"
+                class="ion-no-padding border-radius cardpromo"
+                routerLink="/tabs/car-promotion"
+              >
                 <img class="imgpromo" :src="d.img" />
                 <ion-card-header style="padding-top: 5px">
-                  <ion-card-subtitle style="font-size: 14px; text-align: center; padding-bottom: 2px;">
+                  <ion-card-subtitle
+                    style="
+                      font-size: 14px;
+                      text-align: center;
+                      padding-bottom: 2px;
+                    "
+                  >
                     {{ d.content }}
                   </ion-card-subtitle>
                 </ion-card-header>
@@ -28,22 +37,45 @@
         </ion-card>
       </div>
     </ion-content>
-
   </ion-page>
 </template>
 
 <script >
-import { defineComponent } from 'vue';
-import { Deal } from '@/mocks/promotionDeal';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCardHeader, IonCardSubtitle } from '@ionic/vue';
+import { defineComponent } from "vue";
+import { Deal } from "@/mocks/promotionDeal";
+import {
+  IonPage,
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonButtons,
+  IonBackButton,
+  IonCard,
+  IonCardContent,
+} from "@ionic/vue";
 
 export default defineComponent({
-  name: 'Tab2Page',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonCardHeader, IonCardSubtitle },
+  name: "Tab2Page",
+  components: {
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
+    IonPage,
+    IonCardHeader,
+    IonCardSubtitle,
+    IonButtons,
+    IonBackButton,
+    IonCard,
+    IonCardContent,
+  },
   data() {
     return {
-      deals: Deal
-    }
-  }
+      deals: Deal,
+    };
+  },
 });
 </script>

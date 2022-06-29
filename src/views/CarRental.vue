@@ -249,6 +249,8 @@ import {
   IonDatetime,
   IonSegmentButton,
   IonSelectOption,
+  IonSearchbar,
+  IonSlide
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import moment from 'moment';
@@ -282,7 +284,9 @@ export default defineComponent({
     IonNote,
     IonDatetime,
     IonSegmentButton,
-    IonSelectOption
+    IonSelectOption,
+    IonSearchbar,
+    IonSlide
   },
   created() {
     this.date1 = moment().format('DD/MM/YYYY');

@@ -283,6 +283,10 @@ import {
   IonSelectOption,
   IonToggle,
   IonModal,
+  IonList,
+  IonGrid,
+  IonText,
+  IonChip
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import moment from 'moment';
@@ -315,6 +319,10 @@ export default defineComponent({
     IonSelectOption,
     IonToggle,
     IonModal,
+    IonList,
+    IonGrid,
+    IonText,
+    IonChip
   },
   created() {
     this.date0 = moment().format('DD/MM/YYYY');
